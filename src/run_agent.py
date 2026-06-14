@@ -18,7 +18,7 @@ agent = cast(CompiledStateGraph, get_agent(DEFAULT_AGENT))
 
 async def main() -> None:
     inputs: MessagesState = {
-        "messages": [HumanMessage("Find me a recipe for chocolate chip cookies")]
+        "messages": [HumanMessage("300 乘以 200 等于多少？")]
     }
     result = await agent.ainvoke(
         input=inputs,
